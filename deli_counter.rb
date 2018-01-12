@@ -17,13 +17,16 @@ def take_a_number(katz_deli, name)
   katz_deli << name
   puts "Welcome, #{name}. You are number #{katz_deli.count} in line."
 end
-#
-#
-# function takeANumber(katzDeliLine, newName){
-#   katzDeliLine.push(newName)
-#   return `Welcome, ${newName}. You are number ${katzDeliLine.length} in line.`
-# }
-#
+
+def now_serving(katz_deli)
+  if katz_deli.count > 0
+    customer = katz_deli.shift
+    puts "Currently serving #{customer}."
+  else
+    puts "There is nobody waiting to be served!"
+  end
+end
+
 # function nowServing(katzDeliLine){
 #   if (katzDeliLine.length>0){
 #     const firstPerson = katzDeliLine.shift()

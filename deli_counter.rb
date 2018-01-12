@@ -13,19 +13,10 @@ def line(katz_deli)
   end
 end
 
-#
-# function currentLine(katzDeliLine){
-#   if (katzDeliLine.length === 0){
-#      return "The line is currently empty."
-#   } else{
-#     let string = "The line is currently: "
-#     for(let i=0; i<katzDeliLine.length; i++){
-#       const add = (i+1) === katzDeliLine.length ? "" : ", "
-#       string = string + `${i+1}. ${katzDeliLine[i]}` + add
-#     }
-#   return string
-#   }
-# }
+def take_a_number(katz_deli, name)
+  katz_deli << name
+  "Welcome, #{name}. You are number #{katz_deli.count} in line."
+end
 #
 #
 # function takeANumber(katzDeliLine, newName){

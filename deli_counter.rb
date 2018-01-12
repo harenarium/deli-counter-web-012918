@@ -26,12 +26,3 @@ def now_serving(katz_deli)
     puts "There is nobody waiting to be served!"
   end
 end
-
-# function nowServing(katzDeliLine){
-#   if (katzDeliLine.length>0){
-#     const firstPerson = katzDeliLine.shift()
-#     return `Currently serving ${firstPerson}.`
-#   } else {
-#     return "There is nobody waiting to be served!"
-#   }
-# }
